@@ -14,7 +14,7 @@ func main() {
 	//通过HTTP方法绑定路由规则和路由函数
 	//curl http://localhost:8080/hello
 	router.GET("/hello", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello World")
+		c.String(http.StatusOK, "Hello customer！")
 	})
 	// 冒号:加上一个参数名组成路由参数。
 	// curl http://localhost:8080/user/hello
