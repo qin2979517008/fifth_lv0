@@ -58,6 +58,7 @@ func main() {
 		if v, ok := account[user.Username]; ok && v.Password == user.Password {
 			c.JSON(http.StatusOK, gin.H{
 				"username":   v.Username,
+				"message": "你已经登陆成功",
 			})
 		} else {
 			c.JSON(http.StatusOK, gin.H{
